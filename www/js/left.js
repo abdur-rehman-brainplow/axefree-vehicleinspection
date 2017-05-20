@@ -24,5 +24,5 @@ function token_verify(){
 
 function post_data()
 {
-	window.location.href = "report.html"; 
+	window.location.href = "airbag.html"; 
 }

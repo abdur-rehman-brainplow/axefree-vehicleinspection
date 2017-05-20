@@ -17,6 +17,9 @@
  * under the License.
 
  */
+$(document).ready(function(){
+    token_verify();
+})
 
 
    $(document).ready(function(){

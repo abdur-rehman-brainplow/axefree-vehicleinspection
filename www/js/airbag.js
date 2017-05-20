@@ -12,7 +12,7 @@ function token_verify(){
 	    data: {"token": token},
 	    datatype: 'json' ,
 	    success: function(response) {
-	        alert("Login");
+	       
 	        return true;
 	    },
 	    error: function(e) {
@@ -20,4 +20,9 @@ function token_verify(){
 	    	top.location.href="login.html";	        
 	    }
 	});        
+}
+
+function post_data()
+{
+	window.location.href="report.html"; 
 }

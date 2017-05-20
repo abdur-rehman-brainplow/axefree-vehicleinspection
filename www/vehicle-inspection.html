@@ -5,6 +5,8 @@
 	<title>VIC-AXEFREE</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">	
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" /> -->
+
 	  
 <link rel="stylesheet" href="themes/blacknread.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
@@ -57,13 +59,15 @@
 			        		
 
 				        		<div class = "ui-block-a"> 
-				        		<label for = "hyes"> Yes </label> 
-				        		<input type= "radio" name = "headlightsaccidented" id = "hyes" value = "Yes" checked>
+					        		<label for = "headlightsaccidented"> Yes
+					        			<input type= "radio" name = "headlightsaccidented" id = "headlightsaccidented" value = "1" checked>
+					        		 </label> 
 				        		</div>
 
 				        		<div class = "ui-block-b"> 
-				        		<label for = "hno"> No </label> 
-				        		<input type= "radio" name = "headlightsaccidented" id = "hno" value = "No"  >
+					        		<label for = "headlightsaccidented"> No 
+					        			<input type= "radio" name = "headlightsaccidented" id = "headlightsaccidented" value = "0"  >
+					        		</label> 
 				        		</div>
 
 				        	</div>	
@@ -82,13 +86,15 @@
 			        		
 
 				        		<div class = "ui-block-a"> 
-				        		<label for = "byes"> Yes </label> 
-				        		<input type= "radio" name = "frontbumperaccidented" id = "byes" value = "Yes" checked >
+					        		<label for = "frontbumperaccidented"> Yes 
+					        			<input type= "radio" name = "frontbumperaccidented" id = "frontbumperaccidented" value = "1" checked >
+					        		</label> 
 				        		</div>
 
 				        		<div class = "ui-block-b"> 
-				        		<label for = "bno"> No </label> 
-				        		<input type= "radio" name = "frontbumperaccidented" id = "bno" value = "No"  >
+					        		<label for = "frontbumperaccidented"> No  
+					        			<input type= "radio" name = "frontbumperaccidented" id = "frontbumperaccidented" value = "0"  >
+					        		</label>
 				        		</div>
 
 				        	</div>	
@@ -106,13 +112,15 @@
 			        		
 
 				        		<div class = "ui-block-a"> 
-				        		<label for = "hdyes"> Yes </label> 
-				        		<input type= "radio" name = "hoodaccidented" id = "hdyes" value = "Yes"  checked>
+					        		<label for = "hoodaccidented"> Yes 
+					        			<input type= "radio" name = "hoodaccidented" id = "hoodaccidented" value = "1"  checked>
+					        		</label> 
 				        		</div>
 
 				        		<div class = "ui-block-b"> 
-				        		<label for = "hdno"> No </label> 
-				        		<input type= "radio" name = "hoodaccidented" id = "hdno" value = "No"  >
+					        		<label for = "hoodaccidented"> No 
+					        			<input type= "radio" name = "hoodaccidented" id = "hoodaccidented" value = "0"  >
+					        		</label> 
 				        		</div>
 
 				        	</div>
@@ -124,7 +132,7 @@
 				        	</div>
 
 
-				        	<input type = "submit"  value="Next! Lets Go to Right Side" onclick = "post_data()">
+				        	<input type = "submit"  value="Next! Lets Go to Right Side" onclick = "post_data(hooddamagenotes.value,frontbumperdamagenotes.value,headlightsdamagenotes.value)">
 	
 
 
