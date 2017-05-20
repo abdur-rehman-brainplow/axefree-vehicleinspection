@@ -15,7 +15,15 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+
  */
+
+
+   $(document).ready(function(){
+          window.location.href="login.html";
+     })
+       
+   
 var app = {
     // Application Constructor
     initialize: function() {
