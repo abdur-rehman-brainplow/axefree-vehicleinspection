@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VIC-AXEFREE</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">	
+ <link rel="stylesheet" href="themes/blacknread.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/airbag.js"></script>
+	
+</head>
+<body>
+<div data-role="page" data-theme="b" class = "container">
+	<div data-role="header" > 
+	   <h1> VEHICLE INSPECTION </h1>
+	  
+    </div>
+     
+
+   
+
+    
+	     
+	      <div class="ui-grid-b ui-responsive">
+	       
+			        <div class = "ui-block-a"> 
+			         </div>
+
+			        <div class = "ui-block-a|b">
+			        	<h2  > STEP:5 </h2>
+			        	<div data-role = "header"> 
+			        	<h1> VEHICLE AIRBAG INSPECTION</h1>
+			        	</div>
+			        </div>
+	       
+	      </div>
+
+          <div class="ui-grid-b ui-responsive">
+	       
+			        <div class = "ui-block-a"> 
+			        </div>
+
+			        <div class = "ui-block-b">
+			        	<form action="home.html">
+
+
+			        	<div>
+				        	<label for = "vin">VIN-Number</label>
+				        	<input type = "text" id = "vin" required > 
+				        </div>
+
+			        	   <div class = "ui-grid-b ui-responsive" > 
+			        		<h4  >Air Bag Lights On</h4>
+			        		
+
+				        		<div class = "ui-block-a"> 
+				        		<label for = "ablyes"> Yes </label> 
+				        		<input type= "radio" name = "airbaglightson" id = "ablyes" value = "Yes" checked>
+				        		</div>
+
+				        		<div class = "ui-block-b"> 
+				        		<label for = "ablno"> No </label> 
+				        		<input type= "radio" name = "airbaglightson" id = "ablno" value = "No"  >
+				        		</div>
+
+				        	</div>	
+
+
+				        	<div>
+				        	 <h4> Airbag Lights On Notes</h4>
+				        	 <textarea name="airbaglightsonnotes" id= "airbaglightsonnotes" placeholder="Air Bag Lights On Notes" ></textarea>
+				        		
+				        	</div>
+
+                            
+
+				        	<div class = "ui-grid-b ui-responsive" > 
+			        		<h4  >Air Bag Deployed</h4>
+			        		
+
+				        		<div class = "ui-block-a"> 
+				        		<label for = "abdyes"> Yes </label> 
+				        		<input type= "radio" name = "airbagdeployed" id = "abdyes" value = "Yes" checked >
+				        		</div>
+
+				        		<div class = "ui-block-b"> 
+				        		<label for = "abdno"> No </label> 
+				        		<input type= "radio" name = "airbagdeployed" id = "abdno" value = "No"  >
+				        		</div>
+
+				        	</div>	
+
+				        	<div>
+				        	 <h4>Air Bag Deployed Notes</h4>
+				        	 <textarea name="airbagdeployednotes" id= "airbagdeployednotes" placeholder="Air Bag Deployed Notes" ></textarea>
+				        		
+				        	</div>
+
+
+
+				        	<div class = "ui-grid-b ui-responsive" > 
+			        		<h4  >Air Bag Damaged</h4>
+			        		
+
+				        		<div class = "ui-block-a"> 
+				        		<label for = "abdmyes"> Yes </label> 
+				        		<input type= "radio" name = "airbagdamaged" id = "abdmyes" value = "Yes"  checked>
+				        		</div>
+
+				        		<div class = "ui-block-b"> 
+				        		<label for = "abdmno"> No </label> 
+				        		<input type= "radio" name = "airbagdamaged" id = "abdmno" value = "No"  >
+				        		</div>
+
+				        	</div>
+
+				        	<div>
+				        	 <h4> Air Bag Damage Notes</h4>
+				        	 <textarea name="airbagdamagenotes" id= "airbagdamagenotes" placeholder="Air Bag Damage Notes"  ></textarea>
+				        		
+				        	</div>
+
+
+				        	<div class = "ui-grid-b ui-responsive" > 
+			        		<h4  >Roof Liner curtain Air Bag Deployement</h4>
+			        		
+
+				        		<div class = "ui-block-a"> 
+				        		<label for = "rlcabyes"> Yes </label> 
+				        		<input type= "radio" name = "rooflinercurtainairbagdeployment" id = "rlcabyes" value = "Yes"  checked>
+				        		</div>
+
+				        		<div class = "ui-block-b"> 
+				        		<label for = "rlcabno"> No </label> 
+				        		<input type= "radio" name = "rooflinercurtainairbagdeployment" id = "rlcabno" value = "No"  >
+				        		</div>
+
+				        	</div>
+
+				        	<div>
+				        	 <h4> Roof Liner Curtain Air Bag Deployment Notes</h4>
+				        	 <textarea name="rooflinerairbagdeploymentnotes" id= "rooflinerairbagdeploymentnotes" placeholder="Roof Liner Curtain Air Bag Deployment Notes"  ></textarea>
+				        		
+				        	</div>
+
+
+				        	<input type = "submit"  value="SUBMIT">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+				        		
+
+			        		
+			        	</form>
+			        </div>
+	       
+	      </div>
+
+
+
+	        
+	  
+	    
+  
+          
+      
+
+</div>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AccidentINS-AXEFREE</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">	
+<link rel="stylesheet" href="themes/blacknread.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/accident.js"></script>
+
+</head>
+<body>
+<div data-role="page" data-theme="b" class = "container">
+	<div data-role="header" > 
+	   <h1> VEHICLE INSPECTION </h1>
+	  
+    </div>
+     
+
+   
+
+    
+	     
+	      <div class="ui-grid-b ui-responsive">
+	       
+			        <div class = "ui-block-a"> 
+			         </div>
+
+			        <div class = "ui-block-a|b">
+			        	<h2  > STEP:0 </h2>
+			        	<div data-role = "header"> 
+			        	<h1> VEHICLE ACCEDENTIAL INSPECTION</h1>
+			        	</div>
+			        </div>
+	       
+	      </div>
+
+          <div class="ui-grid-b ui-responsive">
+	       
+			        <div class = "ui-block-a"> 
+			        </div>
+
+			        <div class = "ui-block-b">
+			        	
+
+
+				        <div>
+				        	 <hr style="height:5px;border:none;color:#F50000;background-color:#F50000;"> 
+				        </div>
+
+
+			        	   <div class = "ui-grid-b ui-responsive" > 
+			        		<h4>Accident Damage</h4>
+			        		
+
+				        		<div class = "ui-block-a"> 
+				        		<label > Yes 
+				        		<input type= "radio" name = "accidentdamage" id = "accidentdamage" value = "1" checked>
+				        		</label> 
+				        		</div>
+
+				        		<div class = "ui-block-b"> 
+				        		<label > No  
+				        		<input type= "radio" name = "accidentdamage" id = "accidentdamage" value = "0"  >
+				        		</label>
+				        		</div>
+
+				        	</div>	
+
+				        	<div class = "ui-grid-b ui-responsive" > 
+			        		<h4  >Accident Damage Type</h4>
+			        		
+
+				        		<div class = "ui-block-a"> 
+				        		<label >Major
+				        		<input type= "radio" name = "accidentdamagetype" id = "accidentdamagetype" value = "1" checked >
+				        		</label> 
+				        		</div>
+
+				        		<div class = "ui-block-b"> 
+				        		<label > Minor 
+				        		<input type= "radio" name = "accidentdamagetype" id = "accidentdamagetype" value = "0"  >
+				        		</label> 
+				        		</div>
+
+				        	</div>	
+
+
+
+				        	<div>
+				        	 <h4>  Damage Notes</h4>
+				        	 <textarea name="damagenotes" id= "damagenotes" placeholder=" Damage Notes" ></textarea>
+				        		
+				        	</div>
+
+                            
+
+				        	
+
+                             <button type = "submit" onclick="post_data(damagenotes.value)" id ="submit">Next! Lets Go to Front Side of Vehicle</button>
+				        	 
+			        </div>
+	       
+	      </div>
+
+
+
+	        
+	  
+	    
+  
+          
+      
+
+</div>
+
+
+	
+</body>
+</html>
