@@ -38,26 +38,49 @@ function post_data(damagenotes)
 
      console.log(damagenotes); 
 
-     // var token = window.localStorage.getItem("Authorization");
-     // header = {"token": "jwt "+token}; 
-     // console.log(header); 
-        window.location.href="vehicle-inspection.html"; 
- //     $.ajax({
-	//     type: "POST",
-	//     url: 'http://www.axefree.com/shop_api/vehicle_accident_damage_inspections', 
-	//     data: { "vehicle_inspection_id": "99","accident_damage": accidentdamage,'accident_damage_type': accidentdamagetype , 'accident_damage_notes': damagenotes , "created_at": "2017-05-17T14:07:15.249917Z"},
-	//     headers: header, 
-	//     datatype: 'json' ,
-	//     success: function(response) {
-	//     	console.log("data is successful"); 
-	//          top.location.href="vehicle-inspection.html";
-	//          return true; 
-	//     },
-	//     error: function(e) {
+     var vehicle_inspection_id = window.localStorage.getItem('vehicle_inspection_id'); 
 
-	//         alert('Error: Your email password is incorrect' + e.message);
+     var token = window.localStorage.getItem("Authorization");
+     header = {"token": "jwt "+token}; 
+     console.log(header); 
+        
+     $.ajax({
+	    type: "POST",
+	    headers: {"Authorization": "JWT " +token},
+	    url: 'http://www.axefree.com/shop_api/vehicle_accident_damage_inspections', 
+	    data: { "vehicle_inspection_id": vehicle_inspection_id,
+	    "accident_damage": accidentdamage,
+	    'accident_damage_type': accidentdamagetype ,
+	     'accident_damage_notes': damagenotes , 
+	     "created_at": "2017-05-17T14:07:15.249917Z"},
+	   
+	    datatype: 'json' ,
+	    success: function(response) {
+	    	console.log("data is successful"); 
+	         top.location.href="vehicle-inspection.html";
+	         return true; 
+	    },
+	    error: function(e) {
+
+	        console.log("data is not successfully updated");
           
 	        
-	//     }
-	// });       
+	    }
+	});       
+}
+
+
+function takephoto()
+{
+navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+destinationType: Camera.DestinationType.DATA_URL
+});
+}
+function onSuccess(imageData) {
+var image = document.getElementById('myImage');
+image.src = "data:image/jpeg;base64," + imageData;
+document.getElementById("text1").innerHTML = imageData;
+}
+function onFail(message) {
+alert('Failed because: ' + message);
 }

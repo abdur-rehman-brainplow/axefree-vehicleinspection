@@ -142,6 +142,8 @@ function token_verify(){
 	    	_token = response.token; 
 	    	token= jwt_decode(_token);
 
+	    	console.log(token.user_id); 
+
 	    	
              shop_name(token.user_id); 
 	        return true;
@@ -171,7 +173,7 @@ function shop_name(user_id)
 	    },
 	    error: function(e) {
 	    	
-	    	alert("No shop"); 	        
+	    	console.log("No shop"); 	        
 	    }
 	});        
 
@@ -267,6 +269,7 @@ function post_data()
 	 var inspectiontypes = document.getElementById('inspection_types').value; 
 	 var shop_id = document.getElementById('shop_id').value; 
 
+
 	 console.log(vin); 
 	 console.log(maker); 
 	 console.log(model); 
@@ -286,7 +289,7 @@ function post_data()
 
 
 	
-     // window.location.href = "accident.html"; 
+   
 
 
    var token = window.localStorage.getItem("Authorization");
@@ -321,6 +324,9 @@ function post_data()
 	 },
 	    datatype: 'json' ,
 	    success: function(response) {
+	    	window.localStorage.setItem("vehicle_inspection_id" , response['id']);
+
+
 	        top.location.href="accident.html"
 	        return true;
 	    },

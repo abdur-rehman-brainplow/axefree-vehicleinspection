@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//token_verify();
+	token_verify();
 })
 
 
@@ -37,30 +37,37 @@ function post_data(hoodaccidentednotes,frontbumperaccidentednotes,headlightsacci
  console.log(hoodaccidented);
  console.log(hoodaccidentednotes)
  
- // var token = window.localStorage.getItem("Authorization");
- // var header = {"token": "jwt "+token}; 
+ var vehicle_inspection_id = window.localStorage.getItem('vehicle_inspection_id');
+ var token = window.localStorage.getItem("Authorization");
 
 
- //   $.ajax({
-	//     type: "POST",
-	//     url: 'http://www.axefree.com/shop_api/api-token-verify/', 
-	//     headers: header; 
-	//     data: {"headlights_accident": headlightsaccidented, "headlights_damage_notes": headlightsaccidentednotes , "front_bumper_accidented": frontbumperaccidented , 
-	//    		   "front_bumper_damage_notes":frontbumperaccidentednotes, "hood_accidented": hoodaccidented , 
-	//      	   "hood_damage_notes": hoodaccidentednotes , "created_at": "2017-05-17T14:14:38.241770Z"},
-	//     datatype: 'json' ,
-	//     success: function(response) {
+
+   $.ajax({
+	    type: "POST",
+	    headers: {"Authorization": "JWT " +token},
+	    url: 'http://www.axefree.com/shop_api/vehicle_front_inspection', 
+	    data: {"vehicle_inspection_id": vehicle_inspection_id,
+	    		"headlights_accident": headlightsaccidented,
+	   		  	"headlights_damage_notes": headlightsaccidentednotes, 
+	    		 "front_bumper_accidented": frontbumperaccidented, 
+	   		  	 "front_bumper_damage_notes":frontbumperaccidentednotes,
+	   		  	  "hood_accidented": hoodaccidented, 
+	     	  	 "hood_damage_notes": hoodaccidentednotes, 
+	     	  	 "created_at": "2017-05-17T14:14:38.241770Z"},
+	    datatype: 'json' ,
+	    success: function(response) {
+	    	top.location.href = "right.html";
 	        
-	//         return true;
-	//     },
-	//     error: function(e) {
+	        return true;
+	    },
+	    error: function(e) {
 	    	       
-	//     }
-	// });     
+	    }
+	});     
   
 
 
-  window.location.href="right.html"; 
+  
     
 }
 
