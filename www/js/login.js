@@ -1,3 +1,8 @@
+$(document).ready(function(){
+  
+     
+}); 
+
 function verify(username,password)
           {                  
           	if (username == "") {

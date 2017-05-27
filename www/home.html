@@ -12,24 +12,126 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src = "js/home.js"></script>
 
+<style> 
+.animate {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+.animate-reverse {
+    width: 0px;
+    height: 0px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove2 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove2 5s infinite;
+    animation-duration: 80s;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {
+	-webkit-animation-timing-function: ease;
+}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;
+ margin-top: 500px;
+}
+#div2 {animation-timing-function: ease;
+       margin-left: 500px;
+}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: -600px;}
+    to {left: 1350px;}
+}
+
+@keyframes mymove2 {
+    from {top: -600px;}
+    to {top: 1350px;}
+}
+
+img{
+	height:auto;
+	 max-width:100%; 
+	 width:auto;
+	 	}
+
+</style>
+</head>
+
 </head>
 <body>
-	<div  data-role="page" data-theme="b" class = "container">
-		<div data-role="header"  class="jumbotron">
-				<h1> Welcome to the Axe-Free Vehicle Inspection App </h1>
-		</div>
-		<div class = "ui-grid-b ui-responsive"> 
-		<div class = "ui-block-a"> 
-		</div>
-		<div class = "ui-block-b"> 
+   
 
-		<button >Scheduled Inspections</button>
-		<button onclick="redirect()">Walk In Customer </button>
+   
+   
 
-		<button> Previous Record </button>
+	<div  id = "div0" data-role="page" data-theme="b" class = "container"" style = "background-image: url('img/background.jpg'); background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;" >
+	 
+	
 
-		<button >SIGNOUT</button>
+	
+	    
+		<div id="div01" data-role="header">
+				<h1> AXE-FREE VEHICLE INSPECTION</h1>
 		</div>
+
+		
+	
+		
+	    <br> 
+	    <br> 
+	    <br> 
+	    <br>
+	    <br>
+         <div id = "div02" style = "margin-right:60px; margin-left:60px;  ">
+			<button style="font-size:25px; " >Scheduled Inspections</button>
+			<br>
+	    <br>
+			<button style="font-size:25px; background-image:url(''); background-repeat: no-repeat;" onclick="redirect()">Walk In Customer </button>
+            <br>
+	    <br>
+      
+
+			<button style="font-size:25px; image" > Previous Record </button>
+			<br>
+	    <br>
+
+			<button style="font-size:25px; ">SIGNOUT</button>
+			<br>
+	  	  <br>
+
+	      
+		</div>
+		</div>
+	
+
+		
 
 		
 </body>

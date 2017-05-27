@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	//token_verify();
+	token_verify();
 })
 
 

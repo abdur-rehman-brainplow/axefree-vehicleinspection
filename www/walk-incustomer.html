@@ -21,59 +21,48 @@
         <div  data-role="page" date-theme="a" >
         	
               <!-- page header  -->
-        	<div data-role="header" class = "ui-responsive">
-        		<h1> Vehicle Inspection</h1>
+        	<div data-role="header" class = "ui-responsive"  ">
+        		<h1 > Vehicle Inspection</h1>
 
         	</div>
 
         	 <!--  page decoration and work heading -->
-        	<div class = "ui-grid-a ui-responsive">
-        		<div class = "ui-block-a" >
-                     
-        		</div>
-        		<div class="ui-block-a|b">
+        
+        		
+        		
         			<hr>
         			<hr> 
         			      <!-- SUB HEADER -->
 			        	<div data-role = "header" class = "ui-grid-b ui-responsive" style="overflow: hidden;"> 
 			        		<h1> VEHICLE AND CUSTOMER DETAILS</h1>
 			        	</div>
-        		</div>
-        	</div> 
+        	
+        
 
         	<!-- sub header ends -->
 
-        	<div class="ui-grid-b ui-responsive">
-        		<div class ="ui-block-a">
+        	
         			
-        		</div>
-        		<div class = "ui-block-b ui-responsive">
+        		
+        		
                   <input type = "text" value = "VEHICLE INFORMATION" style="font-size:20px;  text-align:center; color:black; font-weight: bold; background-color:#F50000; ">
-        		</div>
-        		<div class = "ui-block-c">
-        		</div>
-        	</div>
-
+        		
+        	
         	<!-- Vehicle form working -->
-        	<div class = "ui-grid-c ui-responsive">
-        		 <!-- A block will be empty. so this is A block  -->
-        		 <div class = "ui-block-a"></div>
-        		 <!-- BLOCK A ENDS -->
-        		 <!-- BLOCK B STARTED -->
-        		 <div class = "ui-block-b">
+        	
                    
                     <!-- NEW DIVISION OF B BLOCK  -->
 
-        		 	<div class = "ui-grid-a">
+        		 	
         		 	     <!-- TWO DIVISION IN BLOCK B -->
         		 	       <!-- FIRST PART OF B BLOCK --> 
-        		 		<div class = "ui-block-a|b" >
+        		 		
         		 			<label for ="vin"  >VIN Number
         		 				<input type = "text" id="vin" name="vin" placeholder="Enter the Vin NUmber" maxlength="17" minlength="17" onkeyup="verify_characters()"  >
         		 			</label>
-        		 		</div>
+        		
         		 		
-        		 		<div class = "ui-block-a|b">
+        		 		
         		 			<label for="inspectiontypes" >Inspection Types</label>
 			        		<select name="inspectiontypes" id="inspection_types" >
                           
@@ -82,83 +71,70 @@
 			        		</select>
         		 				
         		 			</label>
-        		 		</div>
+        		 
 
         		 		   <!--  FIRST PART OF BLOCK B ENDS  -->
         		 		    <!--  SECOND PART OF BLOCK B STARTS -->
         		 		<!-- <div class = "ui-block-b"><input type= "submit" value = "this is block B|2"></div> -->
         		 		   <!-- SECOND PART OF BLOCK B ENDS -->
-        		 	</div>
+        		 	
 
 
         		 	
-        		 </div>
+        		
         		<!--  BLOCK B ENDS -->
         		<!-- BLOCK C STARTED -->
-        		 <div class = "ui-block-c">
-        		 	
+        		
         		  
         		    <!-- TWO DIVISIONS IN BLOCK C -->
         		    	
-	        		   <div class = "ui-grid-a">
 	        		    <!-- BLOCK A OF C GRID --> 
 
-	        		    	<div class = "ui-block-a">
+	        		           
+                                <label for="maker">MAKER
+                                    <input type="text" id="maker" placeholder="Enter Maker Name" >
+                                </label>    
 	        		    		<label for="model">MODEL
 	        		    			<input type="text" id="model" placeholder="Enter Model No" >
 	        		    		</label>	
 
-	        		    	</div>
+	        		    	
 	        		    	<!-- Block b of C starts -->
-	        		    	<div class = "ui-block-b">
-	        		    		<label for="maker">MAKER
-	        		    			<input type="text" id="maker" placeholder="Enter Maker Name" >
-	        		    		</label>	
+	        		    
 
-	        		    	</div>
+                                    <label for="trim">TRIM
+                                    <input type="text" id="trim" placeholder="Trim" >
+                                </label>    
 
-	        		    	<div class = "ui-block-b">
-	        		    		<label for="year">Year
+	        		    	
+	        		    		<label for="year">Registration Year
 	        		    			<input type="text" id="year" placeholder="Enter Year" >
 	        		    		</label>	
 
-	        		    	</div>
 
-	        		    	<div class = "ui-block-b">
-	        		    		<label for="trim">TRIM
-	        		    			<input type="text" id="trim" placeholder="Trim" >
-	        		    		</label>	
-
-	        		    	</div>
-	        		    
+	        		    	
+	        		    	        		    
 	        		   	
-	        		   </div>
+	        		   
         		 
-        		 </div>
         		 <!-- BLOCK C ENDS -->
         		    <!-- BLOCK D STARTED -->
-        		 <div class = "ui-block-d">
-        		 	
-        		 </div>
+        	
         		 <!-- BLOCK D ENDS -->
-        	</div>
+        
         	    <!-- VEHICLE INPUT  ENDS -->
         	    <!-- VEHICLE NOTES -->
 
-        	    <div class = "ui-grid-b ui-responsive">
-	        	    <div class ="ui-block-a">
-	        			
-	        		</div>
-	        		<div class = "ui-block-b ui-reponsive">
+        	    
+	        		
 	        	      <label for="vehiclenotes"> Additional Notes About Vehicle
 	        	    	<textarea id= "vehiclenotes"></textarea>
 	        	      </label>
 
 	        	      <hr style="height:5px;border:none;color:#F50000;background-color:#F50000;"> 
 	        	      <hr  style="height:5px;border:none;color:#F50000;background-color:#F50000;"> 
-	        	    </div>	
-        	    </div>
-        	    <!-- VEHICLE NOTES ENDS -->
+	        	  
+        	     	    <!-- VEHICLE NOTES ENDS -->
 
 
         	    <!-- CUSTOMER DETAILS STARTED  -->
@@ -169,113 +145,91 @@
         	    <!--  -->
 
 
-        	    <div class="ui-grid-b ui-responsive">
-        		<div class ="ui-block-a">
-        			
-        		</div>
-        		<div class = "ui-block-b ui-responsive">
+        	
+        	
                   <input type = "text" value = "CUSTOMER INFORMATION" style="font-size:20px;  text-align:center; color:black; font-weight: bold; background-color:#F50000; ">
-        		</div>
-        		<div class = "ui-block-c">
-        		</div>
-        	</div>
+        	
+        
 
-        	<!-- Vehicle form working -->
-        	<div class = "ui-grid-c ui-responsive">
-        		 <!-- A block will be empty. so this is A block  -->
-        		 <div class = "ui-block-a"></div>
-        		 <!-- BLOCK A ENDS -->
-        		 <!-- BLOCK B STARTED -->
-        		 <div class = "ui-block-b">
-                   
-                    <!-- NEW DIVISION OF B BLOCK  -->
-
-        		 	<div class = "ui-grid-a">
-        		 	     <!-- TWO DIVISION IN BLOCK B -->
-        		 	       <!-- FIRST PART OF B BLOCK --> 
-        		 		<div class = "ui-block-a|b" >
+     
+               
+        		
         		 			<label for ="fname"  >First Name
         		 				<input type = "text" id="fname" name="fname" placeholder="Enter your First Name" style ="  " required>
         		 			</label>
-        		 		</div>
+        	
         		 		
-        		 		<div class = "ui-block-a|b">
+        		 	
         		 			<label for = "lname"> Last Name
         		 				<input type = "text" id="lname" placeholder="Enter Your Last Name">
         		 			</label>
-        		 		</div>
+        		 		
+                                <label for="email">email
+                                    <input type="email" id="email" placeholder="Enter Your Email" required >
+                                </label>    
+
+                
+                            <!-- Block b of C starts -->
+          
+                                <label for="phoneno">Phone Number
+                                    <input type="text" id="phoneno" placeholder="Enter Your Phone Number" required >
+                                </label>    
                          
         		 		   <!--  FIRST PART OF BLOCK B ENDS  -->
         		 		    <!--  SECOND PART OF BLOCK B STARTS -->
 
-        		 		<div class = "ui-block-a|b">
+        		 	
         		 			<label for = "state"> State
         		 				<input type="text" id = "state" required placeholder="State">
         		 			</label>
-        		 		</div>
         		 		   <!-- SECOND PART OF BLOCK B ENDS -->
-        		 	</div>
-
+        		 	
 
         		 	
-        		 </div>
+        		
         		<!--  BLOCK B ENDS -->
         		<!-- BLOCK C STARTED -->
-        		 <div class = "ui-block-c">
+        		
         		 	
         		  
         		    <!-- TWO DIVISIONS IN BLOCK C -->
         		    	
-	        		   <div class = "ui-grid-a">
+	        	
 	        		    <!-- BLOCK A OF C GRID --> 
 
-	        		    	<div class = "ui-block-a|b">
-	        		    		<label for="email">email
-	        		    			<input type="email" id="email" placeholder="Enter Your Email" required >
-	        		    		</label>	
+	        		    
 
-	        		    	</div>
-	        		    	<!-- Block b of C starts -->
-	        		    	<div class = "ui-block-a|b">
-	        		    		<label for="phoneno">Phone Number
-	        		    			<input type="text" id="phoneno" placeholder="Enter Your Phone Number" required >
-	        		    		</label>	
+	        		    
 
-	        		    	</div>
-
-	        		    	<div class = "ui-block-a">
 	        		    	    <label for="zipcode">Zip Code
 	        		    			<input type="text" id="zipcode" placeholder="Enter Zip Code" required >
 	        		    		</label>	
 	        		    			
 
-	        		    	</div>
-	        		    	<div class = "ui-block-b">
+	        
 	        		    		
 
-	        		    	</div>
+	        		    
 
 	        		    	
 	        		    
 	        		   	
-	        		   </div>
+	        		
         		 
-        		 </div>
+        	
         		 <!-- BLOCK C ENDS -->
         		    <!-- BLOCK D STARTED -->
-        		 <div class = "ui-block-d">
+       
         		 	
-        		 </div>
+        	
         		 <!-- BLOCK D ENDS -->
-        	</div>
+        	
         	    <!-- VEHICLE INPUT  ENDS -->
         	    <!-- VEHICLE NOTES -->
 
-        	    <div class = "ui-grid-b ui-responsive">
-	        	    <div class ="ui-block-a">
-	        			
-	        		</div>
-	        		<div class = "ui-block-b ui-reponsive">
+       
+	        		
+
 	        	      <label for="address"> Address
 	        	    	<textarea id= "address"></textarea>
 	        	      </label>
@@ -283,8 +237,8 @@
 	        	      <hr style="height:5px;border:none;color:#F50000;background-color:#F50000;"> 
 	        	       <input type = "submit" value="submit to start Inspection" onclick="post_data()"> 
 	        	      <hr  style="height:5px;border:none;color:#F50000;background-color:#F50000;"> 
-	        	    </div>	
-        	    </div>
+	        	  
+        	  
 
 
 
